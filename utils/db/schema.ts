@@ -1,4 +1,4 @@
-import {integer, varchar, pgTable, serial, text, timestamp, boolean, point} from 'drizzle-orm/pg-core'
+import {integer, varchar, pgTable, serial, text, timestamp, boolean} from 'drizzle-orm/pg-core'
 
 export const Users = pgTable('users',{
   id: serial('id').primaryKey(),
@@ -7,4 +7,16 @@ export const Users = pgTable('users',{
   name: text('name'),
   points: integer('points').default(50),
   createdAt: timestamp('created_at').defaultNow()
+})
+
+export const Subscriptions = pgTable('subscriptions', {
+    userId: integer('user_id').references(() => Users.id).notNull(),
+    stripeSubscriptionId: varchar('stripe_subscription_id',{
+        length: 255
+    }).notNull(),
+    plan: varchar('plan', {length:50}).notNull(),
+    status: varchar('status',{length:50}).notNull(),
+    currentPeriodStart: timestamp('current_period_start').notNull(),
+    currentPeriodEnd: timestamp('current_period_end').notNull(),
+    cancelAtPeriodEnd: boolean('cancel_at_period_end').notNull().default(false)
 })
