@@ -1,3 +1,4 @@
+require('dotenv').config({ path: '.env.local' });
 
 export default{
   dialect: "postgresql",
@@ -5,7 +6,7 @@ export default{
   out: "./drizzle",
 
   dbCredentials:{
-    url: 'postgresql://neondb_owner:jdiIMWm3oe8D@ep-calm-night-a5ahqpn9.us-east-2.aws.neon.tech/postgenix?sslmode=require',
-    connectionString: 'postgresql://neondb_owner:jdiIMWm3oe8D@ep-calm-night-a5ahqpn9.us-east-2.aws.neon.tech/postgenix?sslmode=require'
+    url: process.env.DATABASE_URL,
+    connectionString: process.env.DATABASE_URL
   }
 };
