@@ -20,3 +20,12 @@ export const Subscriptions = pgTable('subscriptions', {
     currentPeriodEnd: timestamp('current_period_end').notNull(),
     cancelAtPeriodEnd: boolean('cancel_at_period_end').notNull().default(false)
 })
+
+export const GeneratedContent = pgTable('generated_content',{
+    id: serial('id').primaryKey(),
+    userId: integer('user_id').references(()=> Users.id),
+    content: text('content').notNull(),
+    prompt: text('prompt').notNull(),
+    contentType: varchar('content_type',{length:50}).notNull(),
+    createdAt: timestamp('created_at').defaultNow().notNull(),
+})
