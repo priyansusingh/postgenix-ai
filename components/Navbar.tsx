@@ -11,6 +11,7 @@ import {
 import { useState, useEffect } from "react";
 import { Menu, X, Send } from "lucide-react";
 
+
 export function Navbar() {
   const { userId } = useAuth();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
