@@ -5,7 +5,7 @@ import { MailtrapClient } from "mailtrap";
  * and obtain a token that is authorized to send from the domain.
  */
 
-const TOKEN = "c94f6ad56291db20d98656933aeb8e82";
+const TOKEN = process.env.MAILTRAP_CLIENT_API;
 const SENDER_EMAIL = "hello@demomailtrap.com";
 const RECIPIENT_EMAIL = "priyansusingh378@gmail.com";
 
