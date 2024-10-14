@@ -27,6 +27,7 @@
     "pg": "^8.13.0",
     "react": "^18",
     "react-dom": "^18",
+    "stripe": "^17.2.0",
     "svix": "^1.37.0",
     "tailwind-merge": "^2.5.3",
     "tailwindcss-animate": "^1.0.7"
