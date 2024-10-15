@@ -37,7 +37,7 @@ export function Navbar() {
             <Link href="/" className="flex items-center space-x-2">
               <Send className="w-8 h-8 text-blue-500" />
               <span className="text-xl sm:text-2xl font-bold text-white">
-                PostgeniX
+                PostgeniX AI
               </span>
             </Link>
           </div>

@@ -248,7 +248,7 @@ export default function GenerateContent() {
       <div className="flex items-center justify-center min-h-screen bg-[#0a0a0a]">
         <div className="text-center bg-[#111111] p-8 rounded-lg shadow-lg">
           <h1 className="text-3xl font-bold text-white mb-4">
-            Welcome to ThreadCraft AI
+            Welcome to PostgeniX AI
           </h1>
           <p className="text-gray-400 mb-6">
             To start generating amazing content, please sign in or create an
