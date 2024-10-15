@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public//postgenix-preview.png" alt="PostgeniX AI Logo" />
+  <img src="./public/postgenix-ai-preview.png" alt="PostgeniX AI Logo" />
 </p>
 
 # PostgeniX AI: Social Media Content Generator
