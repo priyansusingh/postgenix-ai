@@ -5,5 +5,6 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+
 export const isServer = typeof window === "undefined";
 export const isClient = !isServer;
