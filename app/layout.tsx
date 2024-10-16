@@ -3,8 +3,14 @@ import { dark } from "@clerk/themes";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "PostgeniX AI",
+  description: "It is a ai powered social media content generator app",
+};
 
 export default function RootLayout({
   children,
