@@ -26,7 +26,7 @@
     "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.33.0",
-    "framer-motion": "^11.10.0",
+    "framer-motion": "^11.11.9",
     "lucide-react": "^0.439.0",
     "mailtrap": "^3.4.0",
     "micro": "^10.0.1",

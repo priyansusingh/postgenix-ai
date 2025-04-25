@@ -45,12 +45,14 @@ export default function Home() {
             cutting-edge AI technology.
           </p>
           <div className="flex justify-center space-x-4">
+          <SignUpButton mode="modal">
             <Button
               asChild
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105"
             >
               <Link href="/generate">Start Creating</Link>
             </Button>
+            </SignUpButton>
             <Button
               asChild
               className="bg-transparent border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-full text-lg transition duration-300 ease-in-out"
