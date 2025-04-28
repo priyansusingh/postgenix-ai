@@ -21,7 +21,6 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-gray-100 overflow-hidden pt-20">
       <Navbar />
-
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Decorative elements */}
         <div className="absolute top-20 left-10 animate-float">
