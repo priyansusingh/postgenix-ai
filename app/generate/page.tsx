@@ -129,7 +129,7 @@ export default function GenerateContent() {
 
     setIsLoading(true);
     try {
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
+      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
 
       let promptText = `Generate ${contentType} content about "${prompt}".`;
       if (contentType === "twitter") {
